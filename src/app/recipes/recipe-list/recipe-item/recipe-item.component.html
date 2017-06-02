@@ -1,0 +1,11 @@
+<a class="list-group-item clearfix" [routerLink]="[index]" routerLinkActive="active">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading" [(innerText)]="recipe.name">Recipe Name</h4>
+    <p class="list-group-item-text" [(innerText)]="recipe.description">
+      Description
+    </p>
+  </div>
+  <span class="pull-right">
+    <img [src]="recipe.imagePath" [(alt)]="recipe.name" class="img-responsive">
+  </span>
+</a>

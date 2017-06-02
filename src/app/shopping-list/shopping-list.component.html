@@ -1,0 +1,18 @@
+<div class="row">
+
+  <div class="col-xs-10">
+    <app-shopping-edit></app-shopping-edit>
+  </div>
+
+  <hr/>
+
+  <div class="col-xs-10">
+    <ul class="list-group">
+      <a class="list-group-item" *ngFor="let ingridient of ingridients; let i = index"
+        (click)="onEdit(i)">
+        {{ingridient.name}} ({{ingridient.amount}})
+      </a>
+    </ul>
+  </div>
+
+</div>
